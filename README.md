@@ -17,7 +17,7 @@
 ## 3 семестр (осень 2020)
 ### ЭВМ и ПУ:
 1. [Вопросы к зачету](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/ЭВМ%20Зачет.pdf)
-### ООП (C++)
+### ОООП (C++):
 2. [Вопросы к экзамену](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/ООП%20Билеты.pdf)
 
 ## 2 семестр (весна 2020)
