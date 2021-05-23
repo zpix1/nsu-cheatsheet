@@ -92,7 +92,7 @@ class NotionClientWhoCanDownload(NotionClient):
         }
 
         if export_type in ["pdf", "html"]:
-            data["task"]["request"]["exportOptions"]["pdfFormat"] = "Letter"
+            data["task"]["request"]["exportOptions"]["pdfFormat"] = "A4"
 
         def fetch():
             time.sleep(0.1)
