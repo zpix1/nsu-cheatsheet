@@ -28,6 +28,6 @@
 2. [Подсказки](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/Матлог2%20Подсказки.pdf)
 3. [Как доказать ТОСМ?](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/Матлог2%20ТОСМ.pdf)
 
-### P.S.
-## Благодарности
+## P.S.
+### Благодарности
 **TODO**
