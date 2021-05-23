@@ -14,6 +14,6 @@
 
 ## 3 семестр
 ### ЭВМ и ПУ:
-1. [Вопросы к зачету](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/ЭВМ%20Зачет)
+1. [Вопросы к зачету](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/ЭВМ%20Зачет.pdf)
 ### ООП (C++)
-2. [Вопросы к экзамену](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/ООП%20Билеты)
+2. [Вопросы к экзамену](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/ООП%20Билеты.pdf)
