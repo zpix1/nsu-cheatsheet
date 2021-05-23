@@ -103,7 +103,6 @@ class NotionClientWhoCanDownload(NotionClient):
 
         # Ensure that we're getting the data when it's ready.
         while "status" not in task["results"][0]:
-            print(task["results"])
             task = fetch()
 
         while "exportURL" not in task["results"][0]["status"]:
