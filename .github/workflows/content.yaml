@@ -33,3 +33,4 @@ jobs:
           BRANCH: content # The branch the action should deploy to.
           FOLDER: pdf # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch
+          commit-message: "copy pdf files to content branch"
