@@ -8,5 +8,5 @@ page = client.get_block("https://www.notion.so/zpix/NSU-DOCS-761a53f14fb048d4af3
 for child in page.children:
     print(f'Loading {child.title}')
     pathlib.Path('pdf').mkdir(parents=True, exist_ok=True)
-    path = f'pdf/{child.title}-{child.id}.pdf'
+    path = f'pdf/{child.title}.pdf'
     client.download_block(child.id, path, export_type='pdf')
