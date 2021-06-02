@@ -35,7 +35,7 @@ def load_page_tree(page, path):
                 child_path = subdir / f'{child.title}.pdf'
                 page_list += f'{i+1}. [{child.title}]({CONTENT_BRANCH_PDF_PREFIX}{quote(str(child_path))})\n'
             else:
-                child_path = subdir / f'{child.title}.md'
+                child_path = subdir / child.title / f'{child.title}.md'
                 page_list += f'{i+1}. [{child.title}]({CONTENT_BRANCH_DIR_PREFIX}{quote(str(child_path))})\n'
         
         if page_list != '':
