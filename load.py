@@ -5,7 +5,8 @@ from urllib.parse import quote
 
 client = NotionClientWhoCanDownload(token_v2=os.environ.get('NOTION_V2'))
 
-CONTENT_BRANCH_PREFIX = 'https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/'
+CONTENT_BRANCH_PDF_PREFIX = 'https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/'
+CONTENT_BRANCH_DIR_PREFIX = 'https://github.com/zpix1/nsu-cheatsheet/tree/content/'
 
 page = client.get_block('https://www.notion.so/zpix/NSU-PUBLIC-033de7a6eece42c8af52bcf63ad540e5')
 
@@ -26,22 +27,31 @@ def load_page_tree(page, path):
         subdir = path / page.title
         subdir.mkdir(parents=True, exist_ok=True)
 
-        page_list = f'### {page.title}\n'
+        page_list = f''
 
         for i, child in enumerate(page_children(page)):
             print(f'Child {child.title}')
-            child_path = subdir / f'{child.title}.pdf'
-            page_list += f'{i+1}. [{child.title}]({CONTENT_BRANCH_PREFIX}{quote(str(child_path))})\n'
-            load_page_tree(child, subdir)
+            if load_page_tree(child, subdir):
+                child_path = subdir / f'{child.title}.pdf'
+                page_list += f'{i+1}. [{child.title}]({CONTENT_BRANCH_PDF_PREFIX}{quote(str(child_path))})\n'
+            else:
+                child_path = subdir / f'{child.title}.md'
+                page_list += f'{i+1}. [{child.title}]({CONTENT_BRANCH_DIR_PREFIX}{quote(str(child_path))})\n'
         
-        with open(subdir / f'{page.title}.md', 'w') as f:
-            f.write(page_list)
+        if page_list != '':
+            with open(subdir / f'{page.title}.md', 'w') as f:
+                f.write(f'### {page.title}\n' + page_list)
     else:
         print(f'No children found, a regular page, exporting')
         export_path = path / f'{page.title}.pdf'
         client.download_block(page.id, export_path, export_type='pdf')
+        return True
+    return False
 
-load_page_tree(page, pathlib.Path('./pdf'))
+if __name__ == '__main__':
+    pathlib.Path('./pdf').mkdir(exist_ok=True)
+    os.chdir('./pdf')
+    load_page_tree(page, pathlib.Path('.'))
 
 # for child in page.children:
 #     print(f'Loading {child.title}')
