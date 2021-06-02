@@ -11,7 +11,7 @@
 
 ## 4 семестр (весна 2021)
 ### ТВ и МС:
-1. [Список определений по теории вероятностей](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/NSU-PUBLIC/4 семестр/ТВ и МС/Список по ТВ.pdf)
+1. [Список определений по теории вероятностей](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/NSU-PUBLIC/4%20семестр/ТВ%20и%20МС/Список%20по%20ТВ.pdf)
 2. [Список определений по математической статистике](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/NSU-PUBLIC/4 семестр/ТВ и МС/Список по МС.pdf)
 ### ОС:
 1. [Репозиторий с лабораторными работами](https://github.com/zpix1/nsu-os-labs)
