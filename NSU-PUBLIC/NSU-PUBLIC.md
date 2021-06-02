@@ -1,2 +1,4 @@
 ### NSU-PUBLIC
-1. [ТВ и МС](https://github.com/zpix1/nsu-cheatsheet/tree/content/NSU-PUBLIC/%D0%A2%D0%92%20%D0%B8%20%D0%9C%D0%A1/%D0%A2%D0%92%20%D0%B8%20%D0%9C%D0%A1.md)
+1. [2 семестр](https://github.com/zpix1/nsu-cheatsheet/tree/content/NSU-PUBLIC/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/2%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80.md)
+2. [3 семестр](https://github.com/zpix1/nsu-cheatsheet/tree/content/NSU-PUBLIC/3%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/3%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80.md)
+3. [4 семестр](https://github.com/zpix1/nsu-cheatsheet/tree/content/NSU-PUBLIC/4%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80/4%20%D1%81%D0%B5%D0%BC%D0%B5%D1%81%D1%82%D1%80.md)
