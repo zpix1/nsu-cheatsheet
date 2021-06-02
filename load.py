@@ -18,7 +18,7 @@ def page_children(page):
                 result.append(c)
     else:
         return [child for child in page.children if child.type in ('page', 'collection_view_page') ]
-    return result[:2]
+    return result
 
 def load_page_tree(page, path):
     print(f'Loading {page.title} to {path}')
@@ -26,21 +26,18 @@ def load_page_tree(page, path):
         print(f'Found {len(page_children(page))} children, creating subdir + README')
         subdir = path / page.title
         subdir.mkdir(parents=True, exist_ok=True)
-
         page_list = f''
-
         for i, child in enumerate(page_children(page)):
             print(f'Child {child.title}')
             if load_page_tree(child, subdir):
                 child_path = subdir / f'{child.title}.pdf'
-                page_list += f'{i+1}. [{child.title}]({CONTENT_BRANCH_PDF_PREFIX}{quote(str(child_path))})\n'
+                page_list += f'*. [{child.title}]({CONTENT_BRANCH_PDF_PREFIX}{quote(str(child_path))})\n'
             else:
                 child_path = subdir / child.title / f'{child.title}.md'
-                page_list += f'{i+1}. [{child.title}]({CONTENT_BRANCH_DIR_PREFIX}{quote(str(child_path))})\n'
+                page_list += f'*. [{child.title}]({CONTENT_BRANCH_DIR_PREFIX}{quote(str(child_path))})\n'
         
-        if page_list != '':
-            with open(subdir / f'{page.title}.md', 'w') as f:
-                f.write(f'### {page.title}\n' + page_list)
+        with open(subdir / f'{page.title}.md', 'w') as f:
+            f.write(f'### {page.title}\n' + page_list)
     else:
         print(f'No children found, a regular page, exporting')
         export_path = path / f'{page.title}.pdf'
