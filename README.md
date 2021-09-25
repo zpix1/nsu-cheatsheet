@@ -9,6 +9,14 @@
 
 Ставим звезды, подписываемся на аккаунт, скидываем донаты...
 
+## 5 семестр (осень 2021)
+### МТК
+1. [Репозиторий с лабораторными работами](https://github.com/zpix1/nsu-mtk-labs/)
+
+### Сети (2 семестр)
+
+1. [Репозиторий с лабораторными работами](https://github.com/zpix1/nsu-socket-labs/)
+
 ## 4 семестр (весна 2021)
 ### ТВ и МС:
 1. [Список определений по теории вероятностей](https://raw.githubusercontent.com/zpix1/nsu-cheatsheet/content/NSU-PUBLIC/4%20семестр/ТВ%20и%20МС/Список%20по%20ТВ.pdf)
@@ -21,7 +29,12 @@
 ### ООП (Java):
 1. [Репозиторий с лабораторными работами](https://github.com/zpix1/nsu-java-labs)
 
-### Еще
+
+### Сети (1 семестр)
+
+1. [Репозиторий с лабораторными работами](https://github.com/zpix1/nsu-network-labs/)
+
+## Еще
 Смотрите файлы за другие семестры по [ссылке](https://github.com/zpix1/nsu-cheatsheet/blob/content/NSU-PUBLIC/NSU-PUBLIC.md).
 ## P.S.
 ### Благодарности
